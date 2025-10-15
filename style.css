@@ -1,0 +1,68 @@
+@font-face {
+  font-family: pjs_semibold;
+  src: url(./Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: pjs_medium;
+  src: url(./Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf);
+}
+@font-face {
+  font-family: pjs_regular;
+  src: url(./Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf);
+}
+@font-face {
+  font-family: pjs_light;
+  src: url(./Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf);
+}
+@font-face {
+  font-family: pjs_extra_light;
+  src: url(./Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLight.ttf);
+}
+@font-face {
+  font-family: pjs_bold;
+  src: url(./Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf);
+}
+
+/* Custom Arrow Styles - Extended Tail */
+.fa-arrow-left::before,
+.fa-arrow-right::before {
+  content: "\f060"; /* Regular arrow-left */
+  position: relative;
+}
+
+.fa-arrow-right::before {
+  content: "\f061"; /* Regular arrow-right */
+}
+
+/* Extended tail for left arrow */
+.fa-arrow-left::after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 1px;
+}
+
+/* Extended tail for right arrow */
+.fa-arrow-right::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 1px;
+}
+
+/* Ensure proper positioning for the extended arrows */
+.fa-arrow-left,
+.fa-arrow-right {
+  position: relative;
+  display: inline-block;
+}
